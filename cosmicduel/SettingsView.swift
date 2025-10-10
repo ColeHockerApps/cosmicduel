@@ -17,7 +17,7 @@ struct SettingsView: View {
     @State private var timeAttackDurationLocal: Int = 0
 
     // Single source of truth for the URL (edit later if needed)
-    private let privacyURL = URL(string: "https://example.com/privacy")!
+    private let privacyURL = URL(string: "https://www.termsfeed.com/live/064b70c9-5f27-4670-8b6a-43e981869617")!
 
     var body: some View {
         List {
