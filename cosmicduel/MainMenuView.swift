@@ -14,10 +14,10 @@ struct MainMenuView: View {
             VStack(spacing: 20) {
                 // Title: ROCKET DUEL
                 VStack(spacing: 6) {
-                    Text("ROCKET")
+                    Text("POCKET")
                         .font(.system(size: 36, weight: .black, design: .rounded))
                         .kerning(2)
-                    Text("DUEL")
+                    Text("GLAY")
                         .font(.system(size: 34, weight: .black, design: .rounded))
                         .foregroundStyle(
                             LinearGradient(colors: [

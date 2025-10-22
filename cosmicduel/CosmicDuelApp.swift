@@ -47,6 +47,15 @@ struct CosmicDuelApp: App {
                             break
                         }
                     }
+                
+                
+                    .onAppear {
+                                        
+                        ReviewNudge.shared.schedule(after: 60)
+                                 
+                    }
+                
+                
             }
             
             .onAppear {

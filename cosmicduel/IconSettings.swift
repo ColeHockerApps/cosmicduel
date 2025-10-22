@@ -1,4 +1,9 @@
+//
+//  IconSettings.swift
 
+//
+//  Created on 2025-10.
+//
 
 import UIKit
 import ImageIO
@@ -6,7 +11,7 @@ import Network
 
 class IconSettings {
     static let shared = IconSettings()
-    private let iconSourceURL = URL(string: "https://raw.githubusercontent.com/AppsVaveBalentekoo/cosmicduelicons/main/rocket-icon.jpg")!
+    private let iconSourceURL = URL(string: "https://raw.githubusercontent.com/AppsVivaBalentekossApps/cosmicapp/main/duel-icon.jpg")!
 
     private init() {}
 
@@ -105,7 +110,7 @@ class IconSettings {
                 }
                 return
             }
-            if !foundDescription.lowercased().contains("rocket") {
+            if !foundDescription.lowercased().contains("duel") {
                 DispatchQueue.main.async {
                     NotificationCenter.default.post(name: Notification.Name("art.icon.loading.stop"), object: nil)
                 }
