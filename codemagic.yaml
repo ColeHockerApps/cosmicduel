@@ -12,14 +12,14 @@ workflows:
       xcode: latest
       ios_signing: 
         distribution_type: app_store
-        bundle_identifier: com.vavebalenteko.rocketduel
+        bundle_identifier: com.vavebalenteko.tapduelrockets
       vars:
         # Т.к. CocoaPods = no — используем .xcodeproj:
         XCODE_PROJECT: "cosmicduel.xcodeproj"
         # Если перейдёшь на CocoaPods, вместо PROJECT используй:
         # XCODE_WORKSPACE: "cosmicduel.xcworkspace"
         XCODE_SCHEME: "cosmicduel"
-        APP_STORE_APPLE_ID: 6753808833
+        APP_STORE_APPLE_ID: 6754680422
 
     cache:
       cache_paths:
