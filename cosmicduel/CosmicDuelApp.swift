@@ -7,31 +7,11 @@ struct CosmicDuelApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
     
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    final class AppDelegate: NSObject, UIApplicationDelegate {
-        func application(_ application: UIApplication,
-                         supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-            if OrientationGate.allowAll {
-                return [.portrait, .landscapeLeft, .landscapeRight]
-            } else {
-                return [.portrait]
-            }
-        }
-    }
-    init() {
-
-        NotificationCenter.default.post(name: Notification.Name("art.icon.loading.start"), object: nil)
-        IconSettings.shared.attach()
-
-        
-
-    }
     
     
     var body: some Scene {
         WindowGroup {
-            TabSettingsView{
+           
                 RootTabView()
                     .environmentObject(theme)
                     .environmentObject(match)
@@ -56,11 +36,8 @@ struct CosmicDuelApp: App {
                     }
                 
                 
-            }
             
-            .onAppear {
-                OrientationGate.allowAll = false
-            }
+        
             
         }
         
